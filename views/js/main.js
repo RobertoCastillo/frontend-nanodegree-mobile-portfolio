@@ -501,7 +501,7 @@ function logAverageFrame(times) {   // times is the array of User Timing measure
 function updatePositions() {
   frame++;
   window.performance.mark("mark_start_frame");
-
+	anime = false;
   var items = document.getElementsByClassName('mover');
   for (var i = 0; i < items.length; i++) {
   var phase = Math.sin(pizzaScrollTop + (i % 5));
