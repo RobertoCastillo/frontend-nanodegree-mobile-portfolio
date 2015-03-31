@@ -518,10 +518,14 @@ function updatePositions() {
   }
 }
 var pizzaScrollTop = 0;
+var anime = false;
 // runs updatePositions on scroll
 window.addEventListener('scroll', function() {
 	pizzaScrollTop = document.body.scrollTop / 1250;
-	updatePositions();
+	if(anime) {
+		requestAnimationFrame(updatePositions);
+	}
+	anime = true;
 });
 
 // Generates the sliding pizzas when the page loads.
