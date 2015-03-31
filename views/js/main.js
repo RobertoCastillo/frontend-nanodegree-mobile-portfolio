@@ -521,6 +521,7 @@ var pizzaScrollTop = 0;
 // runs updatePositions on scroll
 window.addEventListener('scroll', function() {
 	pizzaScrollTop = document.body.scrollTop / 1250;
+	updatePositions();
 });
 
 // Generates the sliding pizzas when the page loads.
