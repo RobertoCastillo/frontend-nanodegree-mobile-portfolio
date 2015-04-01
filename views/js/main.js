@@ -504,8 +504,9 @@ function updatePositions() {
 
   var items = document.querySelectorAll('.mover');
   var itemsLength = items.length;
+  var pizzaScrollTop = document.body.scrollTop;
   for (var i = 0; i < itemsLength; i++) {
-    var phase = Math.sin((document.body.scrollTop / 1250) + (i % 5));
+    var phase = Math.sin((pizzaScrollTop / 1250) + (i % 5));
     items[i].style.left = items[i].basicLeft + 100 * phase + 'px';
   }
 
