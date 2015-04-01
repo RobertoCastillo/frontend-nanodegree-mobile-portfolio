@@ -504,8 +504,8 @@ function updatePositions() {
 
   var items = document.getElementsByClassName('.mover');
   for (var i = 0; i < items.length; i++) {
-    var phase = Math.sin(pizzaScrollTop + (i % 5));
-	//console.log(phase, document.body.scrollTop / 1250);
+    var phase = Math.sin(document.body.scrollTop / 1250 + (i % 5));
+	console.log(phase, document.body.scrollTop / 1250, pizzaScrollTop);
     items[i].style.left = items[i].basicLeft + 100 * phase + 'px';
   }
 
