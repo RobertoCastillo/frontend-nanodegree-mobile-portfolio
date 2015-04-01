@@ -505,7 +505,7 @@ function updatePositions() {
   var items = document.getElementsByClassName('.mover');
   for (var i = 0; i < items.length; i++) {
     var phase = Math.sin(document.body.scrollTop / 1250 + (i % 5));
-	console.log(phase, document.body.scrollTop / 1250, pizzaScrollTop);
+	console.log(phase, document.body.scrollTop / 1250);
     items[i].style.left = items[i].basicLeft + 100 * phase + 'px';
   }
 
@@ -518,7 +518,6 @@ function updatePositions() {
     logAverageFrame(timesToUpdatePosition);
   }
 }
-var pizzaScrollTop = document.body.scrollTop / 1250;
 // runs updatePositions on scroll
 window.addEventListener('scroll', updatePositions);
 
