@@ -16,12 +16,15 @@ Inlined style.css & perfmatters.js
 
 Changes:
 
-Reduced pizzas from for loop (line 530)
-Changed querySelectorAll to getElementsByClassName (line 505)
-Removed items.length from for loop and created var itemsLength (line 506)
-Removed document.body.scrollTop / 1250 from for loop and created var pizzaScrollTop (line 507)
-Inserted itemsLength into for loop (line 508)
-Inserted pizzaScrollTop into for loop (line 509)
+Changed all querySelectorAll to getElementsByClassName	  
+Created var allPizzaContainer and moved document.getElementsByClassName("randomPizzaContainer") out of for loop (line 453)
+Created var allPizzaLength and allPizzaContainer.length out of for loop (line 454)
+Moved var dx out of for loop (line 455)
+Removed items.length from for loop and created var itemsLength (line 508)
+Removed document.body.scrollTop / 1250 from for loop and created var pizzaScrollTop (line 509)
+Inserted itemsLength into for loop (line 510)
+Inserted pizzaScrollTop into for loop (line 511)
+Reduced pizzas from for loop (line 532)
 
 
 
