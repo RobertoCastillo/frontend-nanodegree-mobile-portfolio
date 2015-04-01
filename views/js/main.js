@@ -522,7 +522,7 @@ var anime = false;
 // runs updatePositions on scroll
 window.addEventListener('scroll', function() {
 	pizzaScrollTop = document.body.scrollTop / 1250;
-	if(anime) {
+	if(!anime) {
 		requestAnimationFrame(updatePositions);
 	}
 	anime = true;
