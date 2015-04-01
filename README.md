@@ -1,4 +1,31 @@
-## Website Performance Optimization portfolio project
+Roberto's Website Performance Optimization portfolio project
+
+
+####Part 1: Optimize PageSpeed Insights score for index.html
+
+Changes:
+
+Added media type for print.css
+Added asynce to analytics.js
+Resized images
+Minified html and css (see developer version in Full folder)
+Inlined style.css & perfmatters.js
+
+
+####Part 2: Optimize Frames per Second in pizza.html
+
+Changes:
+
+Reduced pizzas from for loop (line 530)
+Changed querySelectorAll to getElementsByClassName (line 505)
+Removed items.length from for loop and created var itemsLength (line 506)
+Removed document.body.scrollTop / 1250 from for loop and created var pizzaScrollTop (line 507)
+Inserted itemsLength into for loop (line 508)
+Inserted pizzaScrollTop into for loop (line 509)
+
+
+
+
 
 Your challenge, if you wish to accept it (and we sure hope you will), is to optimize this online portfolio for speed! In particular, optimize the critical rendering path and make this page render as quickly as possible by applying the techniques you've picked up in the [Critical Rendering Path course](https://www.udacity.com/course/ud884).
 
