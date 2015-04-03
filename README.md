@@ -1,4 +1,4 @@
-####Roberto's Website Performance Optimization portfolio project
+##Roberto's Website Performance Optimization portfolio project
 ###All testing done on Chrome Canary 43.0.2355.0 (64-bit)
 
 ####Part 1: Optimize PageSpeed Insights score for index.html
