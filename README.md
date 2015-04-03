@@ -1,5 +1,5 @@
 Roberto's Website Performance Optimization portfolio project
-
+All testing done on Chrome Canary 43.0.2355.0 (64-bit)
 
 ####Part 1: Optimize PageSpeed Insights score for index.html
 
@@ -24,7 +24,8 @@ Removed items.length from for loop and created var itemsLength (line 508)
 Removed document.body.scrollTop / 1250 from for loop and created var pizzaScrollTop (line 509)
 Inserted itemsLength into for loop (line 510)
 Inserted pizzaScrollTop into for loop (line 511)
-Reduced pizzas from for loop (line 532)
+Removed style.left & basicLeft and replaced it with transform & translateX (line 512 - 514)
+Reduced pizzas from for loop (line 534)
 
 
 

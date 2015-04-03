@@ -509,7 +509,7 @@ function updatePositions() {
   var pizzaScrollTop = document.body.scrollTop / 1250;		//created pizzaScrollTop and removed document.body.scrollTop from for loop
   for (var i = 0; i < itemsLength; i++) {			//inserted itemsLength
     var phase = Math.sin(pizzaScrollTop + (i % 5) * 100);			//inserted pizzaScrollTop
-	items[i].style.WebkitTransform = 'translateX(' + (items[i].basicLeft + 100) * phase + 'px)';
+	items[i].style.WebkitTransform = 'translateX(' + (items[i].basicLeft + 100) * phase + 'px)'; //removed style.left & basicLeft. used transform & translateX
 	items[i].style.MozTransform = 'translateX(' + (items[i].basicLeft + 100) * phase + 'px)';
 	items[i].style.OTransform = 'translateX(' + (items[i].basicLeft + 100) * phase + 'px)';
   }
@@ -531,7 +531,7 @@ window.addEventListener('scroll', updatePositions);
 document.addEventListener('DOMContentLoaded', function() {
   var cols = 8;
   var s = 256;
-  for (var i = 0; i < 18; i++) {			//reduced to 18
+  for (var i = 0; i < 30; i++) {			//reduced to 30
     var elem = document.createElement('img');
     elem.className = 'mover';
     elem.src = "images/pizza.png";
