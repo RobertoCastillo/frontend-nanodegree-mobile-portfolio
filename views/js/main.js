@@ -509,8 +509,6 @@ function updatePositions() {
   var pizzaScrollTop = document.body.scrollTop / 1250;		//created pizzaScrollTop and removed document.body.scrollTop from for loop
   for (var i = 0; i < itemsLength; i++) {			//inserted itemsLength
     var phase = Math.sin(pizzaScrollTop + (i % 5) * 100);			//inserted pizzaScrollTop
-	items[i].style.webkitTransform = 'translateX(' + phase + 'px)';
-	items[i].style.mozTransform = 'translateX(' + phase + 'px)';
 	items[i].style.transform = 'translateX(' + phase + 'px)';
   }
 
