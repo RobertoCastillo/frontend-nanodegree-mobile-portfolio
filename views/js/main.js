@@ -508,11 +508,10 @@ function updatePositions() {
   var itemsLength = items.length;		//created itemsLength and removed items.length from for loop
   var pizzaScrollTop = document.body.scrollTop / 1250;		//created pizzaScrollTop and removed document.body.scrollTop from for loop
   for (var i = 0; i < itemsLength; i++) {			//inserted itemsLength
-    var phase = Math.sin(pizzaScrollTop + (i % 5));			//inserted pizzaScrollTop
-	var item = items[i];
-    item.style.webkitTransform = 'translateX(' + phase + 'px)';
-	item.style.msTransform = 'translateX(' + phase + 'px)';
-	item.style.transform = 'translateX(' + phase + 'px)';
+    var phase = Math.sin(pizzaScrollTop + (i % 5) * 100);			//inserted pizzaScrollTop
+	items[i].style.webkitTransform = 'translateX(' + phase + 'px)';
+	items[i].style.msTransform = 'translateX(' + phase + 'px)';
+	items[i].style.transform = 'translateX(' + phase + 'px)';
   }
 
   // User Timing API to the rescue again. Seriously, it's worth learning.
