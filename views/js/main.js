@@ -510,7 +510,7 @@ function updatePositions() {
   for (var i = 0; i < itemsLength; i++) {			//inserted itemsLength
     var phase = Math.sin(pizzaScrollTop + (i % 5) * 100);			//inserted pizzaScrollTop
 	items[i].style.webkitTransform = 'translateX(' + phase + 'px)';
-	items[i].style.msTransform = 'translateX(' + phase + 'px)';
+	items[i].style.mozTransform = 'translateX(' + phase + 'px)';
 	items[i].style.transform = 'translateX(' + phase + 'px)';
   }
 
